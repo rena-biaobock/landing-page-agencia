@@ -146,4 +146,13 @@ body {
     .hero h2 {
         font-size: 2.5rem;
     }
+
+    .about .item {
+        text-align: center;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
 }
