@@ -162,12 +162,29 @@ body {
 
 .projects {
     grid-area: projects;
-    background-color: darkslateblue;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.projects img {
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.projects a:hover img {
+    opacity: 0.8;
 }
 
 .footer {
     grid-area: footer;
     background-color: darkslategray;
+}
+
+@media (max-width: 768px) {
+    .projects {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media (max-width: 475px) {
@@ -189,6 +206,10 @@ body {
     }
 
     .services {
+        grid-template-columns: 1fr;
+    }
+
+    .projects {
         grid-template-columns: 1fr;
     }
 }
