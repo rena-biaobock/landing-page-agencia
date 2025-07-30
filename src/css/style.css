@@ -181,6 +181,12 @@ body {
     background-color: darkslategray;
 }
 
+@media (max-width: 768px) {
+    .projects {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 @media (max-width: 475px) {
     .hero {
         height: 60vh;
@@ -200,6 +206,10 @@ body {
     }
 
     .services {
+        grid-template-columns: 1fr;
+    }
+
+    .projects {
         grid-template-columns: 1fr;
     }
 }
